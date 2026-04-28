@@ -8,15 +8,13 @@
 }
 body{background:var(--cream);color:var(--text);font-family:var(--sans);font-weight:300;line-height:1.7;overflow-x:hidden}
 
-/* NAV */
 nav{position:sticky;top:0;z-index:100;background:rgba(250,247,242,0.95);backdrop-filter:blur(8px);border-bottom:1px solid rgba(184,147,90,0.2);padding:0 24px}
 .nav-inner{max-width:900px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;height:64px}
 .logo{font-family:var(--serif);font-size:22px;font-weight:300;letter-spacing:3px;color:var(--brown);text-transform:uppercase;font-style:italic}
 .nav-links{display:flex;gap:28px;list-style:none}
 .nav-links a{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--muted);text-decoration:none;transition:color .2s;font-weight:400}
-.nav-links a:hover,.nav-links a.active{color:var(--gold)}
+.nav-links a:hover{color:var(--gold)}
 
-/* HERO */
 .hero{background:var(--brown);color:var(--cream);padding:80px 24px 72px;text-align:center;position:relative;overflow:hidden}
 .hero::before{content:'';position:absolute;inset:0;background:url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23B8935A' fill-opacity='0.06'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E")}
 .hero-eyebrow{font-size:10px;letter-spacing:5px;text-transform:uppercase;color:var(--gold);margin-bottom:20px;font-weight:400}
@@ -30,7 +28,6 @@ nav{position:sticky;top:0;z-index:100;background:rgba(250,247,242,0.95);backdrop
 .hero-detail-label{font-size:10px;letter-spacing:3px;text-transform:uppercase;color:rgba(250,247,242,0.4);margin-bottom:4px}
 .hero-detail-val{font-family:var(--serif);font-size:16px;color:var(--cream)}
 
-/* SECTIONS */
 section{padding:72px 24px}
 .container{max-width:900px;margin:0 auto}
 .section-eyebrow{font-size:10px;letter-spacing:4px;text-transform:uppercase;color:var(--gold);margin-bottom:12px;font-weight:400}
@@ -38,7 +35,6 @@ section{padding:72px 24px}
 .section-title em{font-style:italic}
 .divider{width:40px;height:1px;background:var(--gold);margin-bottom:32px}
 
-/* ABOUT */
 .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
 .about-body p{font-size:15px;color:var(--text);margin-bottom:18px;line-height:1.8}
 .about-body p:last-child{margin-bottom:0}
@@ -47,8 +43,8 @@ section{padding:72px 24px}
 .stat-row:last-child{border-bottom:none}
 .stat-num{font-family:var(--serif);font-size:48px;font-weight:300;color:var(--gold);line-height:1}
 .stat-label{font-size:10px;letter-spacing:3px;text-transform:uppercase;color:rgba(250,247,242,0.5);margin-top:4px}
+.korean-badge{display:inline-flex;align-items:center;gap:8px;background:rgba(184,147,90,0.12);border:1px solid rgba(184,147,90,0.3);color:var(--gold);font-size:10px;letter-spacing:3px;text-transform:uppercase;padding:8px 16px;margin-bottom:28px}
 
-/* SERVICES */
 .services-section{background:var(--warm)}
 .services-intro{font-size:15px;color:var(--muted);max-width:500px;margin-bottom:48px;line-height:1.8}
 .services-grid{display:grid;grid-template-columns:1fr 1fr;gap:2px;background:rgba(184,147,90,0.15)}
@@ -58,19 +54,8 @@ section{padding:72px 24px}
 .service-item:last-child{border-bottom:none}
 .service-name{color:var(--text)}
 .service-price{color:var(--gold);font-weight:400;white-space:nowrap;margin-left:12px}
-.service-note{font-size:11px;color:var(--muted);margin-top:24px;font-style:italic;letter-spacing:0.5px}
+.service-note{font-size:11px;color:var(--muted);margin-top:24px;font-style:italic}
 
-/* PRODUCTS */
-.products-section{background:var(--brown);color:var(--cream)}
-.products-section .section-title{color:var(--cream)}
-.products-section .section-eyebrow{color:rgba(184,147,90,0.8)}
-.products-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:2px;margin-top:40px;background:rgba(250,247,242,0.08)}
-.product-card{background:var(--brown);padding:28px 20px;text-align:center;transition:background .2s}
-.product-card:hover{background:rgba(250,247,242,0.05)}
-.product-name{font-family:var(--serif);font-size:18px;font-weight:300;color:var(--gold);letter-spacing:1px}
-.product-type{font-size:10px;letter-spacing:2px;text-transform:uppercase;color:rgba(250,247,242,0.35);margin-top:6px}
-
-/* REVIEWS */
 .reviews-grid{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:40px}
 .review-card{background:var(--warm);padding:28px;border-left:2px solid var(--gold)}
 .review-stars{color:var(--gold);font-size:13px;letter-spacing:2px;margin-bottom:12px}
@@ -78,7 +63,6 @@ section{padding:72px 24px}
 .review-author{font-size:11px;letter-spacing:2px;text-transform:uppercase;color:var(--muted)}
 .review-source{font-size:10px;color:rgba(140,123,110,0.6);margin-top:2px}
 
-/* CONTACT */
 .contact-section{background:var(--dark);color:var(--cream)}
 .contact-section .section-title{color:var(--cream)}
 .contact-section .section-eyebrow{color:var(--gold)}
@@ -91,14 +75,12 @@ section{padding:72px 24px}
 .hours-table td{padding:8px 0;font-size:13px}
 .hours-table td:first-child{color:rgba(250,247,242,0.5)}
 .hours-table td:last-child{text-align:right;color:var(--cream)}
-.appt-btn{display:inline-block;background:var(--gold);color:var(--dark);font-size:11px;letter-spacing:3px;text-transform:uppercase;padding:16px 40px;text-decoration:none;font-weight:500;margin-top:32px;transition:opacity .2s}
+.appt-btn{display:inline-block;background:var(--gold);color:var(--dark);font-size:11px;letter-spacing:3px;text-transform:uppercase;padding:16px 40px;text-decoration:none;font-weight:500;margin-top:32px;transition:opacity .2s;cursor:pointer;border:none}
 .appt-btn:hover{opacity:0.85}
 
-/* FOOTER */
 footer{background:var(--dark);border-top:1px solid rgba(250,247,242,0.06);padding:24px;text-align:center}
 footer p{font-size:11px;color:rgba(250,247,242,0.25);letter-spacing:1px}
 
-/* TABS */
 .tab-nav{display:flex;gap:0;margin-bottom:0;border-bottom:1px solid rgba(184,147,90,0.2)}
 .tab-btn{background:none;border:none;font-family:var(--sans);font-size:11px;letter-spacing:2px;text-transform:uppercase;padding:12px 20px;color:var(--muted);cursor:pointer;border-bottom:2px solid transparent;margin-bottom:-1px;transition:all .2s;font-weight:400}
 .tab-btn.active{color:var(--gold);border-bottom-color:var(--gold)}
@@ -116,21 +98,19 @@ footer p{font-size:11px;color:rgba(250,247,242,0.25);letter-spacing:1px}
   <div class="nav-inner">
     <div class="logo">Vanity Hair</div>
     <ul class="nav-links">
-      <li><a href="#about" class="active">About</a></li>
+      <li><a href="#about">About</a></li>
       <li><a href="#services">Services</a></li>
-      <li><a href="#products">Products</a></li>
       <li><a href="#reviews">Reviews</a></li>
       <li><a href="#contact">Contact</a></li>
     </ul>
   </div>
 </nav>
 
-<!-- HERO -->
 <div class="hero">
-  <div class="hero-eyebrow">Lakewood, California · Est. 2009</div>
+  <div class="hero-eyebrow">Lakewood, California · Est. 2009 · Korean Owned</div>
   <h1 class="hero-title">Vanity<br><em>Hair Salon</em></h1>
   <div class="hero-sub">Where every client leaves feeling beautiful</div>
-  <a href="#contact" class="hero-cta">Book an Appointment</a>
+  <a href="tel:5628601888" class="hero-cta">Call to Book</a>
   <div class="hero-details">
     <div class="hero-detail">
       <div class="hero-detail-label">Phone</div>
@@ -151,58 +131,43 @@ footer p{font-size:11px;color:rgba(250,247,242,0.25);letter-spacing:1px}
   </div>
 </div>
 
-<!-- ABOUT -->
 <section id="about">
   <div class="container">
     <div class="about-grid">
       <div class="about-body">
+        <div class="korean-badge">🇰🇷 Korean Owned &amp; Operated</div>
         <div class="section-eyebrow">Our Story</div>
         <h2 class="section-title">A salon built on <em>craft & community</em></h2>
         <div class="divider"></div>
         <p>Founded in 2009 in Lakewood, California, Vanity Hair was born from a simple vision: create a salon where clients feel genuinely cared for and stylists love coming to work.</p>
         <p>We welcome men, women, and children of all hair types — whether your style is edgy or classic, your hair straight or curly, short or long. Our team of professionally trained stylists brings decades of combined experience to every chair.</p>
-        <p>Vanity Hair operates as a rental salon, giving each stylist the freedom to run their own practice while benefiting from the warmth and support of our close-knit family of professionals. It's the best of both worlds — independent expertise with a collaborative spirit.</p>
         <p>We invest continuously in our craft, staying current with the latest techniques in hair and skincare. From precision cuts to extensions, color to waxing, we handle all your beauty needs under one roof.</p>
+        <p>With over 125 years of combined experience and a genuine aim to please, Vanity Hair is your new home for hair care in Lakewood.</p>
       </div>
       <div>
         <div class="about-stat-block">
-          <div class="stat-row">
-            <div class="stat-num">2009</div>
-            <div class="stat-label">Year founded</div>
-          </div>
-          <div class="stat-row">
-            <div class="stat-num">125+</div>
-            <div class="stat-label">Years combined experience</div>
-          </div>
-          <div class="stat-row">
-            <div class="stat-num">All</div>
-            <div class="stat-label">Hair types welcome</div>
-          </div>
-          <div class="stat-row">
-            <div class="stat-num">★ 4.5</div>
-            <div class="stat-label">Yelp rating</div>
-          </div>
+          <div class="stat-row"><div class="stat-num">2009</div><div class="stat-label">Year founded</div></div>
+          <div class="stat-row"><div class="stat-num">125+</div><div class="stat-label">Years combined experience</div></div>
+          <div class="stat-row"><div class="stat-num">All</div><div class="stat-label">Hair types welcome</div></div>
+          <div class="stat-row"><div class="stat-num">★ 4.5</div><div class="stat-label">Yelp rating</div></div>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- SERVICES -->
 <section id="services" class="services-section">
   <div class="container">
     <div class="section-eyebrow">What we offer</div>
     <h2 class="section-title">Our <em>Services</em></h2>
     <div class="divider"></div>
-    <p class="services-intro">All services are performed by independent stylists. Prices listed are starting rates and may vary by stylist.</p>
-
+    <p class="services-intro">Prices listed are starting rates and may vary by stylist.</p>
     <div class="tab-nav">
       <button class="tab-btn active" onclick="showTab('cuts',this)">Cuts</button>
       <button class="tab-btn" onclick="showTab('color',this)">Color</button>
       <button class="tab-btn" onclick="showTab('style',this)">Styling</button>
       <button class="tab-btn" onclick="showTab('extras',this)">Extras</button>
     </div>
-
     <div id="cuts" class="tab-panel active">
       <div class="services-grid">
         <div class="service-cat">
@@ -219,9 +184,8 @@ footer p{font-size:11px;color:rgba(250,247,242,0.25);letter-spacing:1px}
           <div class="service-item"><span class="service-name">All over color with cut</span><span class="service-price">from $95</span></div>
         </div>
       </div>
-      <p class="service-note">★ All stylists are independent — prices may vary.</p>
+      <p class="service-note">★ Prices may vary by stylist.</p>
     </div>
-
     <div id="color" class="tab-panel">
       <div class="services-grid">
         <div class="service-cat">
@@ -238,9 +202,8 @@ footer p{font-size:11px;color:rgba(250,247,242,0.25);letter-spacing:1px}
           <div class="service-item"><span class="service-name">Specialty color</span><span class="service-price">consultation</span></div>
         </div>
       </div>
-      <p class="service-note">★ All stylists are independent — prices may vary.</p>
+      <p class="service-note">★ Prices may vary by stylist.</p>
     </div>
-
     <div id="style" class="tab-panel">
       <div class="services-grid">
         <div class="service-cat">
@@ -255,9 +218,8 @@ footer p{font-size:11px;color:rgba(250,247,242,0.25);letter-spacing:1px}
           <div class="service-item"><span class="service-name">Extensions</span><span class="service-price">consultation</span></div>
         </div>
       </div>
-      <p class="service-note">★ All stylists are independent — prices may vary.</p>
+      <p class="service-note">★ Prices may vary by stylist.</p>
     </div>
-
     <div id="extras" class="tab-panel">
       <div class="services-grid">
         <div class="service-cat">
@@ -267,57 +229,14 @@ footer p{font-size:11px;color:rgba(250,247,242,0.25);letter-spacing:1px}
         </div>
         <div class="service-cat">
           <div class="service-cat-title">Good to Know</div>
-          <div style="font-size:13px;color:var(--text);line-height:1.8;padding-top:8px">
-            We offer services for all occasions — from everyday cuts to weddings and special events. Our stylists continue their education regularly to stay current with the latest trends and techniques.
-          </div>
+          <div style="font-size:13px;color:var(--text);line-height:1.8;padding-top:8px">We offer services for all occasions — from everyday cuts to weddings and special events. Our stylists continue their education regularly to stay current with the latest trends and techniques.</div>
         </div>
       </div>
-      <p class="service-note">★ All stylists are independent — prices may vary.</p>
+      <p class="service-note">★ Prices may vary by stylist.</p>
     </div>
   </div>
 </section>
 
-<!-- PRODUCTS -->
-<section id="products" class="products-section">
-  <div class="container">
-    <div class="section-eyebrow">Professional lines</div>
-    <h2 class="section-title">Our <em>Products</em></h2>
-    <div class="divider" style="background:rgba(184,147,90,0.5)"></div>
-    <p style="font-size:15px;color:rgba(250,247,242,0.55);max-width:480px;line-height:1.8">We carry only professional-grade product lines. Ask your stylist for a personalized recommendation.</p>
-    <div class="products-grid">
-      <div class="product-card">
-        <div class="product-name">Kevin Murphy</div>
-        <div class="product-type">Australian luxury</div>
-      </div>
-      <div class="product-card">
-        <div class="product-name">L'anza</div>
-        <div class="product-type">Healing haircare</div>
-      </div>
-      <div class="product-card">
-        <div class="product-name">Olaplex</div>
-        <div class="product-type">Bond repair</div>
-      </div>
-      <div class="product-card">
-        <div class="product-name">Moroccan Oil</div>
-        <div class="product-type">Argan-infused</div>
-      </div>
-      <div class="product-card">
-        <div class="product-name">DevaCurl</div>
-        <div class="product-type">For curly hair</div>
-      </div>
-      <div class="product-card">
-        <div class="product-name">WOW</div>
-        <div class="product-type">Natural formulas</div>
-      </div>
-      <div class="product-card">
-        <div class="product-name">1821</div>
-        <div class="product-type">Men's grooming</div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- REVIEWS -->
 <section id="reviews">
   <div class="container">
     <div class="section-eyebrow">What clients say</div>
@@ -352,7 +271,6 @@ footer p{font-size:11px;color:rgba(250,247,242,0.25);letter-spacing:1px}
   </div>
 </section>
 
-<!-- CONTACT -->
 <section id="contact" class="contact-section">
   <div class="container">
     <div class="section-eyebrow">Get in touch</div>
@@ -396,7 +314,7 @@ footer p{font-size:11px;color:rgba(250,247,242,0.25);letter-spacing:1px}
 </section>
 
 <footer>
-  <p>© 2024 Vanity Hair LLC · 12546 Centralia St, Lakewood, CA 90715 · All rights reserved</p>
+  <p>© 2024 Vanity Hair LLC · Korean Owned &amp; Operated · 12546 Centralia St, Lakewood, CA 90715</p>
 </footer>
 
 <script>
